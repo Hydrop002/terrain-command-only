@@ -6,6 +6,7 @@ scoreboard objectives add pos_x dummy
 scoreboard objectives add pos_z dummy
 scoreboard objectives add count dummy
 scoreboard objectives add rand dummy
+scoreboard objectives add depth dummy
 # 柏林噪声
 scoreboard objectives add layer dummy
 scoreboard objectives add vector_x dummy
@@ -23,7 +24,7 @@ scoreboard objectives add perlin dummy
 scoreboard objectives setdisplay sidebar global
 
 # 通用
-scoreboard players set radius global 1
+scoreboard players set radius global 3
 scoreboard players set unit global 16
 # 柏林噪声
 scoreboard players set grid global 64

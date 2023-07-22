@@ -5,6 +5,7 @@ scoreboard objectives remove pos_x
 scoreboard objectives remove pos_z
 scoreboard objectives remove count
 scoreboard objectives remove rand
+scoreboard objectives add depth dummy
 
 scoreboard objectives remove layer
 scoreboard objectives remove vector_x
