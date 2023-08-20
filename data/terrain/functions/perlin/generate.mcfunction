@@ -1,8 +1,17 @@
 # 执行者为pixel
-execute store result entity @s Pos[1] double 1 run scoreboard players get @s perlin
-execute at @s run setblock ~ ~ ~ minecraft:grass_block
-scoreboard players set @s count 3
-function terrain:perlin/generate_fill
-scoreboard players set @s count 256
-function terrain:perlin/generate_fill2
-kill @s
+scoreboard players set @s depth 16
+
+execute unless score @s layer matches -2147483648..2147483647 run scoreboard players set @s layer 0
+execute if score @s layer matches 0 store result entity @s Pos[1] double 1 run scoreboard players get @s perlin
+execute if score @s layer matches 0 at @s run setblock ~ ~ ~ minecraft:grass_block
+execute if score @s layer matches 0 run scoreboard players remove @s depth 1
+
+execute if score @s layer matches 0 run scoreboard players set @s count 3
+execute if score @s layer matches 0 run scoreboard players set @s layer 1
+execute if score @s layer matches 1 run function terrain:perlin/generate_fill
+execute if score @s layer matches 1 if score @s perlin matches ..0 run function terrain:perlin/kill
+
+execute if score @s layer matches 1 if score @s count matches 0 run scoreboard players set @s count 256
+execute if score @s layer matches 1 if score @s count matches 256 run scoreboard players set @s layer 2
+execute if score @s layer matches 2 run function terrain:perlin/generate_fill2
+execute if score @s layer matches 2 if score @s perlin matches ..0 run function terrain:perlin/kill

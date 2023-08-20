@@ -5,9 +5,11 @@ scoreboard objectives remove pos_x
 scoreboard objectives remove pos_z
 scoreboard objectives remove count
 scoreboard objectives remove rand
-scoreboard objectives add depth dummy
+scoreboard objectives remove depth
 
 scoreboard objectives remove layer
+scoreboard objectives remove grid
+scoreboard objectives remove variation
 scoreboard objectives remove vector_x
 scoreboard objectives remove vector_z
 scoreboard objectives remove offset_x
@@ -18,6 +20,7 @@ scoreboard objectives remove a
 scoreboard objectives remove b
 scoreboard objectives remove interp_n
 scoreboard objectives remove interp_s
+scoreboard objectives remove interp
 scoreboard objectives remove perlin
 
 # gamerule randomTickSpeed 3

@@ -10,10 +10,10 @@ scoreboard players operation @s vector_x -= range global
 scoreboard players operation @s vector_z -= range global
 scoreboard players reset @s math
 
-scoreboard players operation @s count = grid global
+scoreboard players operation @s count = grid math
 scoreboard players operation @s count *= 2 math
 scoreboard players operation @s count *= @s count
 
-scoreboard players set @s layer 1
+scoreboard players operation @s layer = layer math
 
 tag @s remove init
