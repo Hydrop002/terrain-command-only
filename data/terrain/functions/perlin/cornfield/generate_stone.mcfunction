@@ -4,4 +4,4 @@ execute at @s[scores={count=1..,perlin=1..,depth=1..}] run setblock ~ ~ ~ minecr
 scoreboard players remove @s count 1
 scoreboard players remove @s perlin 1
 scoreboard players remove @s depth 1
-execute if entity @s[scores={count=1..,perlin=1..,depth=1..}] run function terrain:perlin/generate_fill2
+execute if entity @s[scores={count=1..,perlin=1..,depth=1..}] run function terrain:perlin/cornfield/generate_stone

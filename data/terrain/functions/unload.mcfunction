@@ -23,8 +23,6 @@ scoreboard objectives remove interp_s
 scoreboard objectives remove interp
 scoreboard objectives remove perlin
 
-# gamerule randomTickSpeed 3
-
 tag @a remove op
 kill @e[type=minecraft:area_effect_cloud]
 

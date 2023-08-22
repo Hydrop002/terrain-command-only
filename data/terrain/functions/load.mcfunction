@@ -54,6 +54,10 @@ scoreboard players set 13 math 13
 scoreboard players set 14 math 14
 scoreboard players set 15 math 15
 scoreboard players set 16 math 16
+scoreboard players set 32 math 32
+scoreboard players set 64 math 64
+scoreboard players set 128 math 128
+scoreboard players set 256 math 256
 scoreboard players set -1 math -1
 scoreboard players set -2 math -2
 scoreboard players set -3 math -3
@@ -71,4 +75,4 @@ scoreboard players set -14 math -14
 scoreboard players set -15 math -15
 scoreboard players set -16 math -16
 
-# gamerule randomTickSpeed 0
+gamerule commandBlockOutput false
