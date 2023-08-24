@@ -111,7 +111,7 @@ scoreboard players operation @s interp_s -= @s interp_n
 scoreboard players operation @s interp *= @s interp_s
 scoreboard players operation @s interp /= ggg math
 scoreboard players operation @s interp += @s interp_n
-function terrain:perlin/cornfield/noise_modifier
+function terrain:perlin/default/noise_modifier
 scoreboard players operation @s perlin += @s interp
 
 execute if score layer math = layer global run scoreboard players operation @s perlin *= variation math

@@ -3,7 +3,6 @@ execute store result score @s vector_x run data get entity @s UUIDLeast 0.000000
 execute store result score @s vector_z run data get entity @s UUIDMost 0.0000000001
 scoreboard players operation @s math = range global
 scoreboard players operation @s math *= 2 math
-# scoreboard players add @s math 1
 scoreboard players operation @s vector_x %= @s math
 scoreboard players operation @s vector_z %= @s math
 scoreboard players operation @s vector_x -= range global

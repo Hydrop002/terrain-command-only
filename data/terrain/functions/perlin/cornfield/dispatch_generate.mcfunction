@@ -2,9 +2,7 @@
 scoreboard players operation @s[tag=!populate] math = @s rand
 scoreboard players operation @s[tag=!populate] math %= 256 math
 execute if score @s[tag=!populate] math matches 0 run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0,Duration:2147483647,Tags:["circle","init"]}
-execute as @e[tag=init,distance=..0.1] run function terrain:perlin/populate
 execute if score @s[tag=!populate] math matches 1..4 run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0,Duration:2147483647,Tags:["jackstraw","init"]}
-execute as @e[tag=init,distance=..0.1] run function terrain:perlin/populate
 execute if score @s[tag=!populate] math matches 5..12 run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0,Duration:2147483647,Tags:["oak","init"]}
 execute as @e[tag=init,distance=..0.1] run function terrain:perlin/populate
 tag @s add populate

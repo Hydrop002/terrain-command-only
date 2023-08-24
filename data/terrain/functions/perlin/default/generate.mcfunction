@@ -3,6 +3,7 @@ scoreboard players set @s depth 16
 
 execute unless score @s layer matches -2147483648..2147483647 run scoreboard players set @s layer 0
 execute if score @s layer matches 0 store result entity @s Pos[1] double 1 run scoreboard players get @s perlin
+# execute if score @s layer matches 0 if score @s perlin matches ..62 at @s run fill ~ ~1 ~ ~ 63 ~ minecraft:water
 execute if score @s layer matches 0 at @s run setblock ~ ~ ~ minecraft:grass_block
 execute if score @s layer matches 0 run scoreboard players remove @s depth 1
 
