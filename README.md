@@ -65,6 +65,8 @@ height = 64
 variation = 64
 ```
 
+![img](img/default.png)
+
 ### cornfield
 
 推荐参数：
@@ -75,6 +77,8 @@ range = 8
 height = 16
 variation = 24
 ```
+
+![img](img/cornfield.png)
 
 ---
 
